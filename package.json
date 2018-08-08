@@ -1,0 +1,25 @@
+{
+  "name": "test-app",
+  "version": "1.0.0",
+  "description": "a test electron app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "build"
+  },
+  "author": "Guido del Puente",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.6",
+    "electron-builder": "^20.26.1",
+    "electron-packager": "^12.1.0"
+  },
+  "build": {
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "icon": "build/icon.ico"
+    }
+  }
+}
